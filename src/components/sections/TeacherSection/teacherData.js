@@ -1,0 +1,23 @@
+import marcelo from "../../../assets/teachers/professor-marcelo.png";
+import luani from "../../../assets/teachers/professora-luani.png";
+
+export const teachers = [
+  {
+    id: 1,
+    image: marcelo,
+    name: "Marcelo",
+    role: "Professor e Diretor de Teatro",
+    experience: 15,
+    bio: "Há mais de 15 anos utiliza o teatro como ferramenta de desenvolvimento humano, ajudando crianças e adolescentes a descobrirem confiança, criatividade e trabalho em equipe através da arte."
+  },
+
+  {
+    id: 2,
+    image: luani,
+    name: "Luani",
+    role: "Professora de Teatro e Intérprete de Libras",
+    experience: 5,
+    bio: "Une o teatro e a Libras para criar experiências acolhedoras e inclusivas, acreditando que a arte deve ser um espaço onde todos possam se expressar, aprender e pertencer."
+  },
+  
+];

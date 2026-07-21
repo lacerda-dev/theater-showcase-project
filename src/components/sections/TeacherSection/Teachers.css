@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+.teacher-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 24px 50px 24px;
+  background: radial-gradient(circle at top, #2d4c77 0%, #0a1d36 70%);
+}
+
+.teacher-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.025;
+  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+  background-size: 8px 8px;
+  pointer-events: none;
+}
+
+.teacher-section::after {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: 0.08;
+  filter: blur(170px);
+  top: -220px;
+  right: -220px;
+  pointer-events: none;
+}
+
+.teacher-list::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: var(--red);
+  opacity: 0.1;
+  filter: blur(150px);
+  left: -150px;
+  bottom: -100px;
+  pointer-events: none;
+}
+
+.teacher-background-word {
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Nothing You Could Do", cursive;
+  font-size: clamp(4rem, 16vw, 8rem);
+  color: white;
+  opacity: 0.05;
+  user-select: none;
+  pointer-events: none;
+}
+
+.teacher-divider {
+  width: 50px;
+  height: 4px;
+  background: var(--red);
+  border-radius: 999px;
+  margin: 18px 0 26px;
+}
+
+.teacher-subtitle {
+  max-width: 720px;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 1.25rem;
+  margin-bottom: 90px;
+}
+
+.teacher-list {
+  position: relative;
+  width: min(1200px, 100%);
+}
+
+/* Desktop */
+
+@media (min-width: 900px) {
+  .teacher-section {
+    padding: 120px 24px;
+  }
+
+  .teacher-background-word {
+    top: 130px;
+    font-size: clamp(5rem, 13vw, 10rem);
+  }
+
+  .teacher-subtitle {
+    font-size: 2rem;
+    margin-bottom: 110px;
+  }
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+.experience-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 24px;
+  background: #f6f5ef;
+}
+
+.experience-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+.experience-background-word {
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Nothing You Could Do", cursive;
+  font-size: clamp(4rem, 16vw, 8rem);
+  color: var(--blue);
+  opacity: 0.1;
+  user-select: none;
+  pointer-events: none;
+}
+
+
+.experience-divider {
+  width: 50px;
+  height: 4px;
+  background: var(--red);
+  border-radius: 999px;
+  margin: 18px 0 26px;
+}
+
+.experience-subtitle {
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  text-align: center;
+  max-width: 650px;
+  color: #2d2d2d;
+  margin-bottom: 55px;
+}
+
+.experience-gallery {
+  width: min(100%, 500px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+  transition: 0.35s;
+  transform: none;
+}
+
+.photo:hover {
+  transform: scale(1.03);
+}
+
+.experience-text {
+  margin-top: 60px;
+  max-width: 720px;
+  text-align: center;
+  line-height: 2;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.experience-button {
+  margin-top: 40px;
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.experience-button:hover {
+  color: var(--red);
+  letter-spacing: 1px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 900px) {
+  .experience-container {
+    padding: 120px 24px;
+  }
+
+  .experience-background-word {
+    top: 130px;
+    font-size: clamp(4rem, 13vw, 10rem);
+  }
+
+  .experience-subtitle {
+    margin-bottom: 70px;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+  }
+
+  .experience-gallery {
+    width: min(1100px, 60%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 250px;
+    gap: 20px;
+  }
+
+  .photo {
+    height: 100%;
+  }
+
+  .photo-1 {
+    transform: rotate(1.5deg);
+  }
+
+  .photo-2 {
+    transform: rotate(-1deg);
+  }
+
+  .photo-3 {
+    grid-column: 1 / 3;
+    transform: rotate(1deg);
+  }
+
+  .experience-text {
+    margin-top: 70px;
+  }
+}

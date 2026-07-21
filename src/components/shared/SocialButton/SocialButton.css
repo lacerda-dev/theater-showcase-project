@@ -1,0 +1,44 @@
+.social-button {
+  width: 180px;
+  height: 52px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.22);
+}
+
+.social-button.blue {
+  background: var(--blue);
+}
+
+.social-button.green {
+  background: var(--green);
+}
+
+.social-button.purple {
+  background: var(--purple);
+}
+
+/* Desktop */
+
+@media (max-width: 700px) {
+  .social-button {
+    width: 52px;
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  .social-button span {
+    display: none;
+  }
+}

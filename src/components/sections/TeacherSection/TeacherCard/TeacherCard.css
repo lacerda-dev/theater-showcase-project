@@ -1,0 +1,111 @@
+.teacher-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  margin-bottom: 90px;
+}
+
+.teacher-image-container {
+  position: relative;
+  width: min(100%, 420px);
+  flex-shrink: 0;
+}
+
+.teacher-image {
+  width: 80%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 22px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.18);
+}
+
+.teacher-image-decoration {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 18px;
+  left: 18px;
+  border-radius: 22px;
+  background: var(--blue);
+  opacity: 0.2;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+.teacher-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teacher-experience {
+  align-self: flex-start;
+  color: var(--blue);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  margin-bottom: 12px;
+}
+
+.teacher-content h3 {
+  font-size: 2.3rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.teacher-content h4 {
+  color: #b8c7d8;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.teacher-line {
+  width: 70px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--red);
+  margin-bottom: 28px;
+  transition: 0.4s;
+}
+
+.teacher-content p {
+  line-height: 2;
+  color: #d8d8d8;
+  font-size: 1.05rem;
+}
+
+/* CARD REVERSE */
+
+.teacher-card.reverse .teacher-image-decoration {
+  background: var(--purple);
+}
+
+/* Desktop */
+
+@media (min-width: 900px) {
+  .teacher-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .teacher-card.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .teacher-image-container {
+    width: 430px;
+  }
+
+  .teacher-content {
+    flex: 1;
+    max-width: 470px;
+  }
+}

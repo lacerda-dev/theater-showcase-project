@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+.hero-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    height:calc(100vh - 88px);
+    overflow:hidden;
+    background:
+    linear-gradient(
+    180deg,
+    var(--blue),
+    #1a1a1a
+    );
+
+}
+
+.hero-img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.content {
+  padding: 24px;
+  position: relative;
+  inset: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.507);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  color: #fafafa;
+  margin-bottom: 24px;
+}
+.hero-headline {
+  font-size: 2.2rem;
+}
+.highlight {
+  margin-top: 4px;
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+  transform: rotate(-4deg);
+  animation: write 2s ease forwards;
+}
+
+
+.highlight-text {
+  color: var(--red);
+  font-family: "Nothing You Could Do", cursive;
+  letter-spacing: 2px;
+  font-size: 2.3rem;
+}
+.hero-subheadline {
+  font-weight: bold;
+  font-size: 1.1rem;
+  max-width: 400px;
+  line-height: 1.5;
+}
+.hero-cta {
+  position: absolute;
+  bottom: 0;
+  padding: 4px;
+  background: linear-gradient(180deg, #e4e3e3cd, #fafafa, #e4e3e3cd);
+  font-weight: bold;
+  font-size: .7rem;
+  z-index: 5;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.082);
+}
+
+.arrow {
+  width: 10px;
+  margin-left: 5px;
+  position: relative;
+  animation-name: arrowMovement;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 0;
+}
+
+ /*ANIMATIONS */
+
+@keyframes arrowMovement {
+  0% {
+    top: -2px;
+  }
+  100% {
+    top: 8px;
+  }
+}
+
+@keyframes write {
+  from {
+    width: 0;
+  }
+  to {
+    width: 105%;
+  }
+}
+
+ /*TABLET */
+
+@media (min-width: 768px) {
+  .hero-headline {
+    font-size: 4.5rem;
+  }
+  .hero-headline span {
+    font-size: 5rem;
+  }
+  .hero-subheadline {
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 700px;
+    line-height: 1.7;
+  }
+  .hero-cta {
+    font-size: 1rem;
+  }
+}
+
+/*DESKTOP */
+
+@media (min-width: 1024px) {
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-areas:
+      "content image"
+      "cta cta";
+  }
+  .hero-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../../../assets/hero-images/textura.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+  .hero-img {
+    object-fit: contain;
+    width: 90%;
+    max-width: 550px;
+    height: 80vh;
+    position: static;
+    grid-area: image;
+    margin-right: 16px;
+    z-index: 2;
+    transform: rotate(3deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+  }
+  .content {
+    grid-area: content;
+    margin-left: 72px;
+    align-items: start;
+  }
+  .hero-headline {
+    font-size: 3rem;
+  }
+  .hero-headline span {
+    font-size: 4rem;
+  }
+  .hero-subheadline {
+    font-weight: bold;
+    font-size: 1.3rem;
+    max-width: 500px;
+    line-height: 1.7;
+  }
+  .hero-cta {
+    grid-area: cta;
+    font-size: .8rem;
+  }
+  .overlay {
+    display: none;
+  }
+}
+
+
+

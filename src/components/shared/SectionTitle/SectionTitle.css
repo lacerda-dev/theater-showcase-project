@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap");
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-title {
+  text-align: center;
+  margin: 24px 0;
+  font-family: "Sniglet", system-ui;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+}
+
+.section-title.dark {
+    color: #222;
+}
+
+.section-title.light {
+    color: #F8F8F8;
+}
