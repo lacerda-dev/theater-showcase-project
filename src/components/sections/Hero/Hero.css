@@ -1,20 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 
-.hero-container{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    height:calc(100vh - 88px);
-    overflow:hidden;
-    background:
-    linear-gradient(
-    180deg,
-    var(--blue),
-    #1a1a1a
-    );
-
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: calc(100vh - 88px);
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--blue), #1a1a1a);
 }
 
 .hero-img {
@@ -52,7 +46,6 @@
   animation: write 2s ease forwards;
 }
 
-
 .highlight-text {
   color: var(--red);
   font-family: "Nothing You Could Do", cursive;
@@ -71,7 +64,7 @@
   padding: 4px;
   background: linear-gradient(180deg, #e4e3e3cd, #fafafa, #e4e3e3cd);
   font-weight: bold;
-  font-size: .7rem;
+  font-size: 0.7rem;
   z-index: 5;
   width: 100%;
   text-align: center;
@@ -90,7 +83,7 @@
   z-index: 0;
 }
 
- /*ANIMATIONS */
+/*ANIMATIONS */
 
 @keyframes arrowMovement {
   0% {
@@ -110,7 +103,7 @@
   }
 }
 
- /*TABLET */
+/*TABLET */
 
 @media (min-width: 768px) {
   .hero-headline {
@@ -184,12 +177,9 @@
   }
   .hero-cta {
     grid-area: cta;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .overlay {
     display: none;
   }
 }
-
-
-
