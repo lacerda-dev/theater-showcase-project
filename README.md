@@ -1,5 +1,13 @@
 # Sempre em Cena Institutional Website
 
+## Overview
+
+This project is the development of an institutional website for **Companhia Teatral Sempre em Cena**, a company that uses theatrical games as a tool for the personal and artistic development of children and teenagers.
+
+Through theater-based activities, the company helps students develop communication skills, confidence, creativity, teamwork, body expression, and emotional awareness.
+
+The website was created to strengthen the company's digital presence and provide an easier way for parents and students to understand how the company works, its methodology, teachers, locations, schedules, and activities.
+
 ## Screenshots
 
 ### Desktop
@@ -9,14 +17,6 @@
 ### Mobile
 
 ![Mobile Preview](./docs/screenshots/home-mobile.png)
-
-## About
-
-This project is the development of an institutional website for **Companhia Teatral Sempre em Cena**, a company that uses theatrical games as a tool for the personal and artistic development of children and teenagers.
-
-Through theater-based activities, the company helps students develop communication skills, confidence, creativity, teamwork, body expression, and emotional awareness.
-
-The website was created to strengthen the company's digital presence and provide an easier way for parents and students to understand how the company works, its methodology, teachers, locations, schedules, and activities.
 
 ## Client Project
 
