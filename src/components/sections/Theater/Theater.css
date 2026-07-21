@@ -12,10 +12,10 @@
 
 .theater-background-word {
   position: absolute;
-  top: 58%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: clamp(6rem, 18vw, 15rem);
+  font-size: clamp(5rem, 18vw, 15rem);
   font-family: "Nothing You Could Do", cursive;
   font-weight: 900;
   letter-spacing: 0.4rem;
