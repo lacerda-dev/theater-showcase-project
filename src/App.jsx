@@ -1,10 +1,17 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Home } from "./components/Home/Home";
+import { Home } from "./pages/Home/Home.jsx";
+import { Gallery } from "./pages/Gallery/Gallery.jsx";
+import { Admin } from "./pages/Admin/Admin.jsx";
 
 function App() {
   return (
     <>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
     </>
   );
 }

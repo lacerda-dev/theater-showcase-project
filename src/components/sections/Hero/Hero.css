@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 
-.hero-container {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,14 +126,14 @@
 /*DESKTOP */
 
 @media (min-width: 1024px) {
-  .hero-container {
+  .hero {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     grid-template-areas:
       "content image"
       "cta cta";
   }
-  .hero-container::before {
+  .hero::before {
     content: "";
     position: absolute;
     inset: 0;

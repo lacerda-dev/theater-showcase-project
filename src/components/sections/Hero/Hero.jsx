@@ -6,7 +6,7 @@ import seta from "../../../assets/elements/seta.png";
 
 export const Hero = () => {
   return (
-    <div className="hero-container">
+    <section id="hero" className="hero">
       <div className="content">
         <h1 className="hero-headline">
           Um lugar para <br /> crescer, criar e se <br />{" "}
@@ -30,6 +30,6 @@ export const Hero = () => {
       <p className="hero-cta">
         Conheça nossa Companhia <img src={seta} alt="" className="arrow" />
       </p>
-    </div>
+    </section>
   );
 };

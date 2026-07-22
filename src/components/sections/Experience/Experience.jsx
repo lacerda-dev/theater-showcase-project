@@ -11,6 +11,7 @@ import image5 from "../../../assets/experience-images/experience-image5.jpg"
 import image6 from "../../../assets/experience-images/experience-image6.jpg"
 
 import { SectionTitle } from "../../shared/SectionTitle/SectionTitle";
+import { Link } from "react-router-dom";
 
 export const Experience = () => {
   return (
@@ -39,9 +40,9 @@ export const Experience = () => {
         alunos por toda a vida.
       </p>
 
-      <a href="#" className="experience-button">
+      <Link to='/gallery' className="experience-button">
         Conheça nossa galeria →
-      </a>
+      </Link>
     </section>
   );
 };

@@ -7,7 +7,7 @@ import { classesData } from "./classesData";
 
 export const Classes = () => {
   return (
-    <section className="classes-section">
+    <section id="classes" className="classes-section">
       <SectionTitle title="Turmas" />
 
       <span className="classes-divider"></span>

@@ -1,7 +1,8 @@
-import React from "react";
-import "./Header.css";
-import logo from "../../../assets/brand/logo-header.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import logo from "../../../assets/brand/logo-header.png";
+import "./Header.css";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,13 +16,13 @@ export const Header = () => {
 
   return (
     <header>
-      <a href="#">
+      <HashLink to="/#">
         <img
           src={logo}
           alt="Logo da CIA Teatral Sempre em Cena"
           className="logo"
         />
-      </a>
+      </HashLink>
       <span
         id="menu-icon"
         className="material-symbols-outlined"
@@ -33,29 +34,34 @@ export const Header = () => {
       <nav>
         <ul className={`nav-list ${menuOpen ? "active" : ""}`}>
           <li>
-            <a href="#" onClick={closeMenu}>
+            <HashLink to="/#" onClick={closeMenu}>
               Início
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a href="#about" onClick={closeMenu}>
+            <HashLink to="/#about" onClick={closeMenu}>
               Quem somos
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a href="#" onClick={closeMenu}>
+            <Link to="/gallery" onClick={closeMenu}>
               Galeria
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#teachers" onClick={closeMenu}>
+            <HashLink to="/#teachers" onClick={closeMenu}>
               Professores
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a href="#join" onClick={closeMenu}>
+            <HashLink to="/#classes" onClick={closeMenu}>
+              Turmas
+            </HashLink>
+          </li>
+          <li>
+            <HashLink to="/#join" onClick={closeMenu}>
               Faça parte
-            </a>
+            </HashLink>
           </li>
         </ul>
       </nav>

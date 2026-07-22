@@ -6,6 +6,7 @@ import { SocialButton } from "../../shared/SocialButton/SocialButton";
 
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { HashLink } from "react-router-hash-link";
 
 export const Footer = () => {
   return (
@@ -54,7 +55,7 @@ export const Footer = () => {
             Trabalhe Conosco
           </a>
 
-          <a href="#">Área Administrativa</a>
+          <HashLink to='/admin'>Área Administrativa</HashLink>
         </div>
 
         <div className="footer-bottom">
