@@ -8,7 +8,7 @@
   position: relative;
   height: calc(100vh - 88px);
   overflow: hidden;
-  background: linear-gradient(180deg, var(--blue), #1a1a1a);
+  background: linear-gradient(180deg, var(--red), black);
 }
 
 .hero-img {
@@ -18,7 +18,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .content {
@@ -47,10 +47,11 @@
 }
 
 .highlight-text {
-  color: var(--red);
+  color: var(--blue);
   font-family: "Nothing You Could Do", cursive;
   letter-spacing: 2px;
-  font-size: 2.3rem;
+  font-size: 2.7rem;
+  font-weight: bolder;
 }
 .hero-subheadline {
   font-weight: bold;
@@ -136,12 +137,17 @@
   .hero::before {
     content: "";
     position: absolute;
+    background: linear-gradient(180deg, var(--red), black);
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
     inset: 0;
-    background-image: url(../../../assets/hero-images/textura.jpg);
+    background-image: url(../../../assets/hero-images/textura3.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: .8;
   }
   .hero-img {
     object-fit: contain;

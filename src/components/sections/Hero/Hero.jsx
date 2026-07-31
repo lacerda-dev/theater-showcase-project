@@ -1,6 +1,6 @@
 import React from "react";
-import heroMobile from "../../../assets/hero-images/textura.jpg";
-import heroDesktop from "../../../assets/hero-images/image-hero-desktop.png";
+import heroMobile from "../../../assets/hero-images/textura3.webp";
+import heroDesktop from "../../../assets/hero-images/image-hero-desktop.webp";
 import "./Hero.css";
 import seta from "../../../assets/elements/seta.png";
 
