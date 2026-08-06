@@ -17,7 +17,7 @@ This is my first real client project, developed to help the company build a more
 
 ### Mobile
 
-<img src="./docs/screenshots/home-mobile.png" alt="Mobile Preview" width="500">
+<img src="./docs/screenshots/home-mobile.png" alt="Mobile Preview" width="250">
 
 ## Features
 
