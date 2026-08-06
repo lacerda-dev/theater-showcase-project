@@ -31,14 +31,12 @@ Permitir que visitantes acompanhem a história da companhia através dos registr
 - título
 - data
 
-
 ## Não deve conter
 
 - textos longos
 - excesso de informações
 - poluição visual
 - muitas animações
-
 
 ## Critério de sucesso
 
