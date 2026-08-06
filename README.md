@@ -50,3 +50,11 @@ The initial version of the website is being developed, with new pages and featur
 * Information sections about the company, teachers, classes, and activities
 * Gallery structure for showcasing previous showcases
 * Reusable components for better organization and maintenance
+
+### Deploy
+
+Vercel
+
+### URL
+
+https://theater-showcase-project.vercel.app/
